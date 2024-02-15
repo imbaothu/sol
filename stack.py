@@ -40,3 +40,5 @@ class MyStack:
         if self.is_empty():
             return None
         return self._array[self._size - 1]
+    def __len__(self):
+        return self._size

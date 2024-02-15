@@ -1,0 +1,76 @@
+
+3 + 4 + 5
+ Operators: All addition (+), so the precedence is the same.
+ Order: Left to right.
+* 3 - 2 - 7
+ Operators: All subtraction (-), so the precedence is the same.
+   Order: Left to right.
+* 		8 * 4 - 2
+    * Higher precedence is multiplication (*), and the order is *, -.
+* 		4 - 2 / 5
+    * Higher precedence is division (/), and the order is /, -.
+* 		5 / 3 * 9
+    * Operators: Division (/) and multiplication (*), which have the same precedence.
+    * Order: Left to right, since they have the same precedence.
+* 		6 * 2 + 1
+    * Higher precedence is multiplication (*), and the order is *, +.
+* 		7 + 3 - 2
+    * Operators: Addition (+) and subtraction (-), so the precedence is the same.
+    * Order: Left to right.
+* 		3 + 8 * 5
+    * Higher precedence is multiplication (*), and the order is *, +.
+* 		6 + 2 * 5 - 8
+    * Higher precedence is multiplication (*), and the order is *, +, -.
+
+Q6.1 Task 3
+Input		Stack afterward		Output afterward
+9			top --> None		9
++			top --> +			9
+1			top --> +			91
+			top --> None		91+
+Input		Stack afterward		Output afterward
+7			top --> None		7
+-			top --> -			7
+2			top --> -			72
+*			top --> - *			72
+8			top --> - *			728
+			top --> -			728*
+			top --> None		728*-
+
+a. 3 + 4 becomes 34+
+b. 3 - 2 - 7 becomes 32-7-
+c. 8 * 4 - 2 becomes 842-
+d. 4 - 2 / 5 becomes 42/5-
+e. 5 / 3 * 9 becomes 53/9
+f. 6 * 2 + 1 becomes 621+
+g. 7 + 3 - 2 becomes 73+2-
+h. 3 + 8 * 5 becomes 385+
+i. 6 + 2 * 5 - 8 becomes 625*+8
+
+Q7.1 Task 4
+Input        Stack afterward       Output afterward
+(            top --> (              
+5            top --> (              5
++            top --> + (            5
+3            top --> + (            5 3
+/            top --> / + (          5 3
+7            top --> / + (          5 3 7
+)            top -->                5 3 7 / +
+*            top --> *              5 3 7 / +
+9            top --> *              5 3 7 / + 9
+             top -->                5 3 7 / + 9 *
+             
+a) (3) becomes 3
+b) (3 + 4) becomes 34+
+c) 3 - (2 - 7) becomes 327--
+d) 8 * (4 - 2) becomes 842-*
+e) 4 - (2 / 5) becomes 425/-
+f) (5 / 3) * 9 becomes 53/9*
+g) (6 * 2 + 1) becomes 621+
+h) 7 + (6 - 3) / 2 becomes 763-2/+
+i) 7 * (6 - 3) / 2 becomes 763-2/
+j) (3 + 8) * 5 becomes 38+5
+k) 6 * (2 + 5) - 8 becomes 625+8-
+l) (4 + 2) * 7 / 3 becomes 42+73/
+m) (6 + 2) * (9 + 1) becomes 62+91+
+

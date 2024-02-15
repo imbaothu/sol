@@ -8,7 +8,7 @@ class MyStack:
     def __init__(self):
         self._size = 0
         self._capacity = 2  # Explicitly managing capacity
-        self._array = Array(self._capacity)  # Initialize the Array with the specified capacity
+        self._array = Array(self._capacity,None)  # Initialize the Array with the specified capacity
 
     def is_empty(self):
         return self._size == 0
